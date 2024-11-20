@@ -54,7 +54,7 @@ The build files will be generated in the `build/` directory, ready to be deploye
 ## 🔗 Live Website
 
 Check out my live portfolio here:  
-🌟 **[Sai Krishna's Portfolio](saikrishnapedada.netlify.app)** 🌟
+🌟 **[Sai Krishna's Portfolio](https://saikrishnapedada.netlify.app)** 🌟
 
 ---
 
