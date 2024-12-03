@@ -1,4 +1,6 @@
-// Projects.js
+
+
+
 import React from "react";
 import styled from "styled-components";
 
@@ -25,6 +27,10 @@ const Title = styled.h1`
   font-weight: 600;
   color: ${({ theme }) => theme.text_primary};
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 `;
 
 const ProjectCard = styled.div`
@@ -40,12 +46,17 @@ const ProjectCard = styled.div`
   transition: transform 0.3s;
 
   &:hover {
-    transform: translateY(-9px); /* Slight lift */
-    background-color: rgba(23, 92, 230, 0.1); /* Subtle background color change */
+    transform: translateY(-9px);
+    background-color: rgba(23, 92, 230, 0.1);
     box-shadow: 
-      0 0 20px rgba(23, 92, 230, 0.6), /* Glow effect */
-      0 0 30px rgba(23, 92, 230, 0.5), /* Inner glow */
-      rgba(23, 92, 230, 0.4) 0px 8px 32px; /* Increased shadow */
+      0 0 20px rgba(23, 92, 230, 0.6),
+      0 0 30px rgba(23, 92, 230, 0.5),
+      rgba(23, 92, 230, 0.4) 0px 8px 32px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 16px;
   }
 `;
 
@@ -53,12 +64,20 @@ const ProjectTitle = styled.h2`
   font-size: 24px;
   color: ${({ theme }) => theme.text_primary};
   margin-bottom: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const ProjectDescription = styled.p`
   font-size: 16px;
   color: ${({ theme }) => theme.text_secondary};
   margin-bottom: 12px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const ProjectTags = styled.div`
@@ -80,12 +99,12 @@ const Tag = styled.span`
 `;
 
 const Link = styled.a`
-  color: inherit; /* Inherit the color from Tag component */
-  text-decoration: none; /* Remove underline */
+  color: inherit;
+  text-decoration: none;
 
   &:hover {
-    color: white; /* Change to white on hover */
-    text-decoration: none; /* Ensure no underline on hover */
+    color: white;
+    text-decoration: none;
   }
 `;
 
@@ -112,36 +131,41 @@ const Projects = () => {
             <Tag>Node.js</Tag>
             <Tag>MySQL</Tag>
             <Tag>Responsive Design</Tag>
-            {/* <Tag><Link href="#">Link</Link></Tag> */}
           </ProjectTags>
         </ProjectCard>
 
         <ProjectCard>
           <ProjectTitle>Quiz App</ProjectTitle>
           <ProjectDescription>
-            An interactive quiz application built with React to test knowledge
-            on various topics.
+            An interactive quiz app built with React, featuring:
+            <ul>
+              <li>🎯 Engaging quizzes across topics.</li>
+              <li>📊 Real-time score tracking.</li>
+              <li>🌙 Light mode.</li>
+              <li>📱 Fully responsive design.</li>
+            </ul>
           </ProjectDescription>
           <ProjectTags>
             <Tag>React</Tag>
             <Tag>Quiz Features</Tag>
-            {/* <Tag><Link href="#">Link</Link></Tag> */}
+            <Tag><Link href="https://mindmash.netlify.app/" target="_blank">Link</Link></Tag>
           </ProjectTags>
         </ProjectCard>
+
         <ProjectCard>
-  <ProjectTitle style={{ textAlign: "center" }}>
-    <span style={{ background: "linear-gradient(to right, #ff8a00, #e52e71)", color: "white", padding: "6px 12px", borderRadius: "12px", display: "inline-block" }}>
-      🌟 Mini Projects 🌟
-    </span>
-  </ProjectTitle>
-  <ProjectDescription  >
-    <ul>
-      <li style={{ marginLeft: "20px" }}>🔗 <Link href="https://qrgeneratorbysaikrishna.netlify.app" target="_blank">QR Code Generator</Link></li>
-      <li style={{ marginLeft: "20px" }}>😂 <Link href="https://jokegeneratorbysaikrishna.netlify.app" target="_blank">Joke Generator</Link></li>
-    </ul>
-  </ProjectDescription>
-</ProjectCard>
-      
+          <ProjectTitle style={{ textAlign: "center" }}>
+            <span style={{ background: "linear-gradient(to right, #ff8a00, #e52e71)", color: "white", padding: "6px 12px", borderRadius: "12px", display: "inline-block" }}>
+              🌟 Mini Projects 🌟
+            </span>
+          </ProjectTitle>
+          <ProjectDescription>
+            <ul>
+              <li style={{ marginLeft: "20px" }}>🔍 <Link href="https://qrgeneratorbysaikrishna.netlify.app" target="_blank">QR Code Generator</Link></li>
+              <li style={{ marginLeft: "20px" }}>😂 <Link href="https://jokegeneratorbysaikrishna.netlify.app" target="_blank">Joke Generator</Link></li>
+              <li style={{ marginLeft: "20px" }}>🛡️ <Link href="https://github.com/pedadasaikrishna/passwordvalidator" target="_blank">passwordvalidator</Link></li>
+            </ul>
+          </ProjectDescription>
+        </ProjectCard>
       </Wrapper>
     </Container>
   );

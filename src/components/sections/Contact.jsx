@@ -1,3 +1,5 @@
+
+
 import React, { useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import emailjs from "@emailjs/browser";
@@ -25,6 +27,9 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 40px;
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -35,6 +40,9 @@ const Wrapper = styled.div`
   gap: 12px;
   align-items: center;
   animation: ${fadeIn} 1s ease-in;
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 
 const Title = styled.h1`
@@ -44,6 +52,10 @@ const Title = styled.h1`
   margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
   animation: ${scaleUp} 0.7s ease-in-out;
+  @media (max-width: 768px) {
+    font-size: 36px;
+    margin-top: 12px;
+  }
 `;
 
 const Desc = styled.p`
@@ -52,6 +64,10 @@ const Desc = styled.p`
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
   margin-bottom: 40px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 `;
 
 const ContactForm = styled.form`
@@ -66,6 +82,9 @@ const ContactForm = styled.form`
   box-shadow: rgba(23, 92, 230, 0.1) 0px 4px 24px;
   animation: ${fadeIn} 0.5s ease-in-out;
   gap: 16px;
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 const ContactInput = styled.input`
@@ -82,10 +101,18 @@ const ContactInput = styled.input`
     box-shadow: 0 0 8px ${({ theme }) => theme.primary + "50"};
     animation: ${scaleUp} 0.3s ease-out;
   }
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
 `;
 
 const ContactInputMessage = styled(ContactInput).attrs({ as: "textarea" })`
   resize: none;
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
 `;
 
 const ContactButton = styled.button`
@@ -109,18 +136,30 @@ const ContactButton = styled.button`
     background-color: grey;
     cursor: not-allowed;
   }
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
 `;
+
 const Heading = styled.h1`
   text-align: center;
   color: ${({ theme }) => theme.primary};
-  test-size: 5px;
+  font-size: 24px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
+
 const StatusMessage = styled.div`
   color: ${({ isSuccess }) => (isSuccess ? "#4caf50" : "#f44336")};
   font-size: 16px;
   text-align: center;
   margin-top: 20px;
   animation: ${shake} 0.3s ease-in-out;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const Contact = () => {

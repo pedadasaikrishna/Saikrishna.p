@@ -43,9 +43,13 @@ const Desc = styled.div`
   text-align: center;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
+  margin-bottom: 40px;
   @media (max-width: 768px) {
     font-size: 16px;
+    margin-bottom: 20px;
+    padding: 20px;
   }
+
 `;
 
 const Education = () => {
