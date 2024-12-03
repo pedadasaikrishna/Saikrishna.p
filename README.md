@@ -19,7 +19,7 @@ Follow these steps to run the project locally on your machine. 🛠️
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/pedadasaikrishna/Saikrishna-portfolio.git
-cd Saikrishna.p
+cd Saikrishna-portfolio
 ```
 
 ### 2️⃣ Install Dependencies
