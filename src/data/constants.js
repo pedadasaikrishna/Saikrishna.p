@@ -296,6 +296,16 @@ export const skills = [
         name:"Chat GPT",
         image: "https://cdn.oaistatic.com/assets/favicon-32x32-p4ktpm1x.webp",
 
+      },
+      {
+        name:"FireBase",
+        image: "https://www.gstatic.com/mobilesdk/240501_mobilesdk/firebase_28dp.png",
+
+      },
+      {
+        name:"Google Colab",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Google_Colaboratory_SVG_Logo.svg/1600px-Google_Colaboratory_SVG_Logo.svg.png?20221103151432",
+
       }
     ],
   },
