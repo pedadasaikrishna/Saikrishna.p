@@ -172,7 +172,7 @@ const Contact = () => {
     setIsSubmitting(true);
     emailjs
       .sendForm(
-        "service_bjejwyf",
+        "service_vw2a5qb",
         "template_11miw95",
         form.current,
         "7hW1qWdtrW8zERMVZ"
