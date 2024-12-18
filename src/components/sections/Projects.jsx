@@ -107,7 +107,25 @@ const Link = styled.a`
     text-decoration: none;
   }
 `;
-
+const AlbumButtonLink = styled(Link)`
+  font-size: 14px;
+  background-color: ${({ theme }) => theme.primary + "20"};
+  color: ${({ theme }) => theme.primary};
+  padding: 4px 8px;
+  border-radius: 8px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;  /* Removes underline */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top:20px;
+  &:hover {
+    background-color: ${({ theme }) => theme.primary + "40"};
+  }
+`;
 // Projects Component
 const Projects = () => {
   return (
@@ -149,6 +167,7 @@ const Projects = () => {
             <Tag>React</Tag>
             <Tag>Quiz Features</Tag>
             <Tag><Link href="https://mindmash.netlify.app/" target="_blank">Link</Link></Tag>
+            <Tag><Link href="/album/MindMash" target="_self">View Album</Link></Tag>
           </ProjectTags>
         </ProjectCard>
 

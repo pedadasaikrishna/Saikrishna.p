@@ -1,9 +1,9 @@
 
 
-
+import { Link } from "react-router-dom";
 import React from "react";
 import styled from "styled-components";
-
+// import Album from "./Album";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -125,12 +125,54 @@ const Duration = styled.div`
     font-size: 10px;
   }
 `;
+const AlbumButtonLink = styled(Link)`
+  font-size: 14px;
+  background-color: ${({ theme }) => theme.primary + "20"};
+  color: ${({ theme }) => theme.primary};
+  padding: 4px 8px;
+  border-radius: 8px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;  /* Removes underline */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top:20px;
+  &:hover {
+    background-color: ${({ theme }) => theme.primary + "40"};
+  }
+`;
+// const Link = styled.a`
+//   color: inherit;
+//   text-decoration: none;
 
+//   &:hover {
+//     color: white;
+//     text-decoration: none;
+//   }
+// `;
 const Experience = () => {
   return (
     <Container id="Experience">
       <Wrapper>
         <Title>Experience</Title>
+          
+          
+        <ExperienceCard>
+  <PositionTitle>Participated in CongniVit Hackathon</PositionTitle>
+  <CompanyName>Organized by Vishnu Institute of Technology</CompanyName>
+  <ExperienceDescription>
+    Participated in a hackathon focused on developing a fitness cam monitoring system 🏋️‍♂️📷. 
+    The project aimed to track workout postures and angles, offering real-time feedback and suggestions for improvements 💪🔧. 
+    This experience enhanced my skills in AI, pose estimation, and real-time data processing 🤖💻. 
+    Earned a certificate of participation 🏅 and valuable insights for future fitness-tech innovations.
+  </ExperienceDescription>
+  <Duration>16/12/2024</Duration>
+  <AlbumButtonLink to="/album/CongniVit" target="_self">View Album</AlbumButtonLink>
+
+</ExperienceCard>
 
         <ExperienceCard>
           <PositionTitle>Participant - Failathon Event 🎤</PositionTitle>
@@ -143,6 +185,7 @@ const Experience = () => {
             organizers.
           </ExperienceDescription>
           <Duration>December 2023</Duration>
+          <AlbumButtonLink to="/album/Failathon" target="_self">View Album</AlbumButtonLink>
         </ExperienceCard>
 
         <ExperienceCard>
