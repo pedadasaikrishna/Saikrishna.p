@@ -21,5 +21,5 @@ export const hackathons = {
 
   Failathon: [failc],
   FailathonSize: ['750px', '650px'], // Default size
-  FailathonSizeSmall: ['400px', '300px'], // Smaller screen sizes
+  FailathonSizeSmall: ['200px', '100px'], // Smaller screen sizes
 };
