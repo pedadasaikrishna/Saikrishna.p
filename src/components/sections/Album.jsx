@@ -44,7 +44,6 @@ const AlbumTitle = styled.h1`
     font-size: 1.8rem;
   }
 `;
-
 const AlbumImages = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(${({ $minWidth }) => $minWidth}, 1fr));
@@ -52,6 +51,7 @@ const AlbumImages = styled.div`
   transition: all 0.3s ease;
 
   @media (max-width: 768px) {
+    grid-template-columns: 1fr;  /* Forces all images to be in a single column on small screens */
     gap: 1rem;
   }
 
@@ -59,6 +59,7 @@ const AlbumImages = styled.div`
     gap: 0.75rem;
   }
 `;
+
 
 const AlbumImageWrapper = styled.div`
   position: relative;
