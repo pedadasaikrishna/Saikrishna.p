@@ -1,6 +1,6 @@
 
 
-
+import { Link } from "react-router-dom";
 import React from "react";
 import styled from "styled-components";
 
@@ -98,7 +98,7 @@ const Tag = styled.span`
   align-items: center;
 `;
 
-const Link = styled.a`
+const Links = styled.a`
   color: inherit;
   text-decoration: none;
 
@@ -166,9 +166,9 @@ const Projects = () => {
           <ProjectTags>
             <Tag>React</Tag>
             <Tag>Quiz Features</Tag>
-            <Tag><Link href="https://mindmash.netlify.app/" target="_blank">Link</Link></Tag>
+            <Tag><Links href="https://mindmash.netlify.app/" target="_blank">Link</Links></Tag>
           </ProjectTags>
-          <AlbumButtonLink href="/album/MindMash" target="_self">View Album</AlbumButtonLink>
+          <AlbumButtonLink to="/album/MindMash" target="_self">View Album</AlbumButtonLink>
 
         </ProjectCard>
 
@@ -180,9 +180,9 @@ const Projects = () => {
           </ProjectTitle>
           <ProjectDescription>
             <ul>
-              <li style={{ marginLeft: "20px" }}>🔍 <Link href="https://qrgeneratorbysaikrishna.netlify.app" target="_blank">QR Code Generator</Link></li>
-              <li style={{ marginLeft: "20px" }}>😂 <Link href="https://jokegeneratorbysaikrishna.netlify.app" target="_blank">Joke Generator</Link></li>
-              <li style={{ marginLeft: "20px" }}>🛡️ <Link href="https://github.com/pedadasaikrishna/passwordvalidator" target="_blank">passwordvalidator</Link></li>
+              <li style={{ marginLeft: "20px" }}>🔍 <Links href="https://qrgeneratorbysaikrishna.netlify.app" target="_blank">QR Code Generator</Links></li>
+              <li style={{ marginLeft: "20px" }}>😂 <Links href="https://jokegeneratorbysaikrishna.netlify.app" target="_blank">Joke Generator</Links></li>
+              <li style={{ marginLeft: "20px" }}>🛡️ <Links href="https://github.com/pedadasaikrishna/passwordvalidator" target="_blank">passwordvalidator</Links></li>
             </ul>
           </ProjectDescription>
         </ProjectCard>
