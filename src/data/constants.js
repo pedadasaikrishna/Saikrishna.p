@@ -247,10 +247,10 @@ export const skills = [
         name: "Java",
         image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
       },
-      {
-        name: "C++",
-        image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-      }
+      // {
+      //   name: "C++",
+      //   image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+      // }
     ]
   }
 ,  
