@@ -94,7 +94,6 @@ You can deploy the build files using platforms like **Netlify**, **Vercel**, or 
 Feel free to reach out for collaboration or questions! 📩  
 
 ---
-![Visitor Count](https://komarev.com/ghpvc/?username=pedadasaikrishna&label=Profile%20Views&color=0e75b6&style=flat)
-
+ 
 Enjoy exploring my portfolio! ✨
 
