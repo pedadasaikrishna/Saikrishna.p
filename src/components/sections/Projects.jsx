@@ -181,8 +181,8 @@ const Projects = () => {
           <ProjectDescription>
             <ul>
               <li style={{ marginLeft: "20px" }}>🔍 <Links href="https://qrgeneratorbysaikrishna.netlify.app" target="_blank">QR Code Generator</Links></li>
-              <li style={{ marginLeft: "20px" }}>😂 <Links href="https://jokegeneratorbysaikrishna.netlify.app" target="_blank">Joke Generator</Links></li>
-              <li style={{ marginLeft: "20px" }}>🛡️ <Links href="https://github.com/pedadasaikrishna/passwordvalidator" target="_blank">passwordvalidator</Links></li>
+{/*               <li style={{ marginLeft: "20px" }}>😂 <Links href="https://jokegeneratorbysaikrishna.netlify.app" target="_blank">Joke Generator</Links></li> */}
+              <li style={{ marginLeft: "20px" }}>🛡️ <Links href="https://github.com/pedadasaikrishna/passwordvalidator" target="_blank">passwordvalidator -> Repo</Links></li>
             </ul>
           </ProjectDescription>
         </ProjectCard>
